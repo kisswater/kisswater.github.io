@@ -5,8 +5,8 @@ import { makeAction } from '../util'
 
 const SET_GITHUB_USER = 'wuyuedefeng'
 const SET_ACCESS_TOKEN = 'c3397b9146997f4db4426e975f0e091919715324'
-const SET_TOKEN_USER = 'SET_TOKEN_USER'
-const LS_KEY_ACCESS_TOKEN = 'LS_KEY_ACCESS_TOKEN'
+const SET_TOKEN_USER = 'wuyuedefeng'
+const LS_KEY_ACCESS_TOKEN = 'c3397b9146997f4db4426e975f0e091919715324'
 
 const state = {
   accessToken: localStorage.getItem(LS_KEY_ACCESS_TOKEN),  // 这个不要修改，这个不要修改，这个不要修改。当前登录用户的 GitHub AccessToken
