@@ -141,7 +141,7 @@ www.bingoogolapple.cn
 2. 填写名称，只勾选 `public_repo`,然后保存，github 会生成一个可访问你公开项目的 access_token，将它填入到配置文件的 access_token 的值中，并取消注释。
     ![](http://img-storage.qiniudn.com/15-6-12/64340386.jpg)
     
-3. 打开 `store/modules/accounts`, 配置 `SET_ACCESS_TOKEN`参数
+3. 打开 `store/modules/accounts`, 配置 `apiAccessToken`参数
 
 ## License
 
