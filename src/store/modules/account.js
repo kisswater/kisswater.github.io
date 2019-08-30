@@ -10,7 +10,7 @@ const LS_KEY_ACCESS_TOKEN = ''
 
 const state = {
   accessToken: localStorage.getItem(LS_KEY_ACCESS_TOKEN),  // 这个不要修改，这个不要修改，这个不要修改。当前登录用户的 GitHub AccessToken
-  apiAccessToken: '554bdfb08e229a3c71152e4ff8c460b3e966e818',
+  apiAccessToken: '',
   auth: {
     proxy: 'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token', // 这个不要修改，这个不要修改，这个不要修改。
     clientID: '784a4c0fe6369a243010',   // 改成你在 https://github.com/settings/applications/new 新建的 OAuth application 的 Client ID

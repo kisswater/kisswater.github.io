@@ -5,7 +5,7 @@ axios.interceptors.request.use(function (config) {
   if (/get/i.test(config.method)) {
     if (store.state.account.apiAccessToken) {
       config.params = config.params || {}
-      config.params['access_token'] = store.state.account.apiAccessToken
+      config.headers['Authorization'] = `token ${store.state.account.apiAccessToken}`
     }
   }
   return config
