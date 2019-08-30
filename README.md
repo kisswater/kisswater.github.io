@@ -56,7 +56,7 @@ npm run dev
 > 3.[创建 OAuth Application](https://github.com/settings/applications/new)
 
 ![OAuth Application](https://user-images.githubusercontent.com/8949716/29244726-34983f0c-7ff2-11e7-98a7-6435b419c8dd.png)
-> 4.个人配置 - 修改「BGAIssueBlog/src/store/account.js」文件中的「state」属性
+> 4.个人配置 - 修改「BGAIssueBlog/src/store/modules/account.js」文件中的「state」属性
 
 ```JavaScript
 const state = {
@@ -129,6 +129,19 @@ www.bingoogolapple.cn
 「主机记录」填「www」
 「记录值」填「GitHub用户名.github.io」，例如我的是「bingoogolapple.github.io」
 ```
+
+## 3. 提高 API 访问次数的配额
+
+默认情况下你是用匿名权限访问 github 接口的， github 的访问限制是一个小时最多 60 次请求，这显然是不够的，如何提高限制呢？ 
+
+1. 到个人设置下的 Personal access tokens 页（https://github.com/settings/tokens ），如下图，点击右上角的 Generate new token
+    
+    ![](http://img-storage.qiniudn.com/15-6-12/56879685.jpg)
+
+2. 填写名称，只勾选 `public_repo`,然后保存，github 会生成一个可访问你公开项目的 access_token，将它填入到配置文件的 access_token 的值中，并取消注释。
+    ![](http://img-storage.qiniudn.com/15-6-12/64340386.jpg)
+    
+3. 打开 `store/modules/accounts`, 配置 `SET_ACCESS_TOKEN`参数
 
 ## License
 
