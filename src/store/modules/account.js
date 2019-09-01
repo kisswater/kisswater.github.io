@@ -3,24 +3,24 @@
  */
 import { makeAction } from '../util'
 
-const SET_GITHUB_USER = 'wuyuedefeng'
+const SET_GITHUB_USER = 'renjiansiyuetian'
 const SET_ACCESS_TOKEN = ''
 const SET_TOKEN_USER = ''
 const LS_KEY_ACCESS_TOKEN = ''
 
 const state = {
   accessToken: localStorage.getItem(LS_KEY_ACCESS_TOKEN),  // 这个不要修改，这个不要修改，这个不要修改。当前登录用户的 GitHub AccessToken
-  apiAccessToken: ['f7cf565a16bd566f449c', '0993a0deaf42d2de55bb'],
+  apiAccessToken: ['b6d5ef033390b5a33', 'de92eb4c449f1b7cf075dd6'],
   auth: {
     proxy: 'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token', // 这个不要修改，这个不要修改，这个不要修改。
-    clientID: '784a4c0fe6369a243010',   // 改成你在 https://github.com/settings/applications/new 新建的 OAuth application 的 Client ID
-    clientSecret: 'fbdc25827e80ebac782f912aa55b08c618e7b62a'  // 改成你在 https://github.com/settings/applications/new 新建的 OAuth application 的 Client Secret
+    clientID: 'f26481cc7cb3ff372300',   // 改成你在 https://github.com/settings/applications/new 新建的 OAuth application 的 Client ID
+    clientSecret: '7bfccba8496a623024bda60d47dc7b7d6f527e54'  // 改成你在 https://github.com/settings/applications/new 新建的 OAuth application 的 Client Secret
   },
   gitHubUser: null,  // 这个不要修改，这个不要修改，这个不要修改。
-  gitHubUsername: 'wuyuedefeng',  // 修改成你自己的 GitHub 账号
+  gitHubUsername: 'renjiansiyuetian',  // 修改成你自己的 GitHub 账号
   copyright: '2019 - 2030',  // 修改成你自己的
   recordNumber: '蜀ICP备xxx号',  // 修改成你自己的备案编号，如果没有备案的话就设置为 null
-  repo: 'wuyuedefeng/blogs',  // 记录 Issue 的仓库的全名「用户名/仓库名」
+  repo: 'kisswater/kisswater.github.io',  // 记录 Issue 的仓库的全名「用户名/仓库名」
   pageSize: 10,  // 博客列表每页显示多少条博客
   showQQGroup: false,  // 如果要显示你自己的 QQ 群二维码图片的话这里配置成 true 并且替换「BGAIssueBlog-Web/static/img/qq-group.png」为你自己的 QQ 群二维码图片，否则配置成 false 即可
   thirdPartySite: [  // 配置你想在左上角展示的第三方站点信息
